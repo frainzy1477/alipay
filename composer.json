@@ -1,0 +1,37 @@
+{
+  "name": "fraizy1477/alipay",
+  "type": "library",
+  "description": "Alipay gateway payment processing library",
+  "keywords": [
+    "alipay",
+    "gateway",
+    "merchant",
+    "pay",
+    "payment",
+    "purchase"
+  ],
+  "homepage": "https://github.com/frainzy1477/alipay",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "frainzy"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\Alipay\\": "src/",
+      "Omnipay\\Alipay\\Tests\\": "tests/"
+    },
+    "files": [
+      "src/Common/helpers.php"
+    ]
+  },
+  "require": {
+    "omnipay/common": "^3.0",
+    "php-http/guzzle6-adapter": "*"
+  },
+  "require-dev": {
+    "omnipay/tests": "^3.0",
+    "squizlabs/php_codesniffer": "3.*"
+  }
+}
